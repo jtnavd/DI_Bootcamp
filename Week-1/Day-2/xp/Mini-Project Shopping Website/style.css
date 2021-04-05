@@ -1,0 +1,17 @@
+body{
+    background-image: linear-gradient(to bottom right, grey, black);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.column{
+    float: left;
+    width: 33,33%;
+    padding: 5px;
+}
+
+.row: after {
+    content: "el1,el2"
+    clear: both;
+    display: table;
+}
