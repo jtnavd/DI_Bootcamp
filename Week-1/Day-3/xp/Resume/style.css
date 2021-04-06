@@ -5,7 +5,7 @@
     Padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'ubuntu', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -17,6 +17,8 @@ body {
     margin: 25px auto;
     display: flex;
 }
+
+/* LEFT--------------------------------------------- */
 
 .left{
     background: #292b2f;
@@ -34,10 +36,69 @@ body {
     border-radius:30px;
 }
 
+.left .icon{
+    font-size: 20px;
+    color:black;
+}
+
+.left .text{
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.title{
+    font: size 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:  5px;
+    padding-bottom: 10px;
+    color: #3525af;
+    /* change color */
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.title:before{
+    content:"";
+    position:absolute;
+    top:35px;
+    right:0;
+    width:50px;
+    height:3px;
+    background:#3525af;
+}
+
+/* RIGHT--------------------------------------------- */
+
 .right{
     width: calc(100% - 250px);
 }
 
 .pb{
     padding-bottom: 20px;
+}
+
+.contacts-container .list-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contacts-container .list-container .icon{
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-container .list-container .text{
+    width: calc(100% - 50px);
+    word-break: break-word;
+    color: #fff;
 }
