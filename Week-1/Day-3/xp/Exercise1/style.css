@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(to bottom,black,grey);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-container{
+    border-color: red;
+    border: size 10px;
+}
+
+.box1{
+    background-color: aqua;
+    height: 300px;
+    margin: 30px;
+    display: flex;
+    justify-content: top;
+}
+
+.box2{
+    background-color: aqua;
+    width:600px; height: 300px;
+    margin: auto;
+    align-content:center space-between;
+}
+
+.box3{
+    background-color: aqua;
+    height: 300px;
+    margin: 30px;
+    display: flex;
+    justify-content: bottom;
+}
+

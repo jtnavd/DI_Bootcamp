@@ -1,0 +1,50 @@
+body{
+    background-image: linear-gradient(to bottom,black,grey);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .container{
+        width: 600px;
+        padding: 10px;
+        text-align: center;
+        background-color: aqua;
+        border: none;
+        margin: 0;
+} */
+.box1{
+    order: 4;
+}
+.box2{
+    order: 8;
+}
+.flex-container{
+    background-color: black;
+    display: flex;
+    padding: 10px;
+    /* flex-direction: row-reverse; */
+    /* justify-content: flex-centefr; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    align-content: stretch;
+    /* padding-bottom: center; */
+
+}
+
+.flex-container > div{
+    width: 100px;
+    height: 100px;
+    margin:10px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color:red;
+}
+
+.green{
+    background-color:green;
+}

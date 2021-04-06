@@ -1,0 +1,33 @@
+body{
+    background-image:black;
+    background-size: cover;
+}
+.container{
+border: 4px solid red;
+}
+
+.box-top {
+    background-color: blueviolet;
+    /* width: 100%; */
+    height: 300px;
+    margin: 30px;
+    display: flex;
+    justify-content: top;
+}
+
+.box-mid {
+    background-color: blueviolet;
+    height:300px;
+    margin: 30px;
+    width: 50%;
+    /* display: flex; */
+    align-self: flex-start; 
+}
+
+.box-bottom {
+    background-color: blueviolet;
+    height: 300px;
+    margin: 30px;
+    display: flex;
+    justify-content: bottom;
+}

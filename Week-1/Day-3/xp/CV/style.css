@@ -1,0 +1,52 @@
+body{
+    /* background-image:linear-gradient(grey, white) */
+    
+}
+
+img{
+    border-radius:50%;
+}
+
+/* .background{
+    background-color: grey;
+    background-size: cover;
+    background-repeat: no-repeat
+} */
+
+
+.container-side{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row-reverse;
+
+}
+
+*{
+    /*  */
+}
+.mainTitle{
+    background-color: blue;
+    width: 20%;
+    /* display: flex;
+    align-items: flex-end; */
+    
+}
+
+.profile{
+    background-color: grey;
+    display: flex;
+    
+}
+
+.workExperience{
+    background-color: grey;
+    display: flex;
+    
+
+}
+
+.Education{
+    background-color: grey;
+    display: flex;
+    
+}

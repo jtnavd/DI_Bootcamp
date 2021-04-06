@@ -1,7 +1,26 @@
+
 body{
-    background-image: linear-gradient(to bottom right, grey, black);
+    background-image: linear-gradient(to bottom, white, grey);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.title{
+    font-size: 4em;
+    position: center;
+}
+.description{
+    font-size: 2em
+    line-height: 62px;
+    font-family: tahoma;
+}
+.container{
+    width: 800px;
+    margin: 50px auto 0;
+    display:table;
+    box-sizing: border;
+}
+* {
+    box-sizing: border-box;
 }
 
 .column{
@@ -11,7 +30,16 @@ body{
 }
 
 .row: after {
-    content: "el1,el2"
+    content:""
     clear: both;
     display: table;
+}
+,button{
+    background-color: grey;
+    border:none;
+    padding:15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size:16px;
 }
