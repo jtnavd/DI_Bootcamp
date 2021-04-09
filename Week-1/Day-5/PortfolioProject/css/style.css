@@ -176,6 +176,13 @@ body{
     background:#333;
 }
 
+.about .profile-pic img{
+    border-radius: 15px 50px 30px;
+    padding: 20px;
+    width:100%;
+    height:100%;
+}
+
 .info {
     padding:0 2rem;
 }
@@ -265,31 +272,21 @@ body{
         width: 5rem;
         background: #333;
       }
-      
-      .service .box-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-      }
 
       /* SHAPE */
-      .service .box-container.container {
+      .service .box-container {
     position: relative;
     width: 1050px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250,1ft));
+    /* flex-wrap:wrap; */
+    /* justify-content: space-between; */
     /* transform: skewY(-10deg); */
     /* transition:0.5s; */
 }
 
     /* INITIAL POSITION */
-    .container .card{
+    .card{
         position: relative;
         width: 300px;
         height: 400px;
@@ -300,7 +297,7 @@ body{
     }
 
     /* Z AXIS SHAPE */
-    .container .card:before{
+    .card:before{
         content: '';
         position: absolute;
         top: -15px;
@@ -314,7 +311,7 @@ body{
     }
 
     /* X AXIS SHAPE */
-    .container .card:after{
+    .card:after{
         content: '';
         position: absolute;
         top: -8px;
@@ -329,11 +326,11 @@ body{
     }
 
     /* ANIMATION */
-    .container .card:hover{
+    .card:hover{
         transform: translateY(-40px) skewY(-10deg);
     }
 
-    .container .card .imgBx{
+    .card .imgBx{
         position: relative;
         width: 300px;
         height: 200px;
@@ -345,17 +342,17 @@ body{
         flex-direction: column;
     }
 
-    .container .card .imgBx img{
+    .card .imgBx img{
         max-width: 100px;
     }
 
-    .container .card .imgBx h3{
+    .card .imgBx h3{
         position: relative;
         color:#fff;
         margin: 10px;
     }
 
-    .container .card .content{
+    .card .content{
         position: relative;
         width:100%;
         height:200px;
@@ -366,7 +363,7 @@ body{
     }
 
     /* SHADOW */
-    .container .card .content:before{
+    .card .content:before{
         content: '';
         position: absolute;
         left: 0;
@@ -382,22 +379,22 @@ body{
     }
 
     /* SHADOW BLUR */
-    .container .card:hover .content:before{
+    .card:hover .content:before{
         transform: translateY(40px) skewX(45deg);
         filter: blur(5px);
         opacity: 0.5px;
     }
 
     /* SHADOW TRANSITION (parent to child) */
-    .container .card:nth-child(1){
+    .card:nth-child(1){
         z-index: index 3;
     }
 
-    .container .card:nth-child(1){
+    .card:nth-child(1){
         z-index: index 2;
     }
 
-    .container .card:nth-child(1){
+    .card:nth-child(1){
         z-index: index 1;
     }
       
