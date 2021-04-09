@@ -1,0 +1,22 @@
+body{
+    background: black;
+}
+
+*{
+    font-family: "Helvetica Neue",sans-serif;
+    color: #fff;
+}
+
+.bg{
+    background-image: url(https://img.freepik.com/free-vector/light-wave-border-background_53876-78863.jpg?size=626&ext=jpg);
+}
+
+.profile-img{
+    /* display: flex; */
+    position: relative;
+    top: 50%;
+    left: 20%;
+    border-radius: 50%;
+}
+
+

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,800&display=swap');
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-{
+    text-transform: uppercase;
+    font-size:14px;
+    font: weight 800px;
+}
