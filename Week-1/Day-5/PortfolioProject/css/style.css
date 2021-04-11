@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
 
-/* @mixin heading(){
-    font-size:3rem;
-    text-align:center;
-    color:#333;
-    margin:3rem 0;
-    padding-top:5.5rem;
-    position:relative;
-
-        heading:after{
-            content:"";
-            position:absolute;
-            bottom:-5rem; left:50%;
-            transform:translateX(50%);
-            height: 0.3rem;
-            width: 5rem;
-            background:#333;
-        }
-} */
-
 *{
     margin:0; padding:0;
     box-sizing: border-box;
@@ -45,23 +26,14 @@ body{
     justify-content: space-between;
     padding:1rem 2rem;
     z-index:100;
-    background: #fff;
-    box-shadow: .1rem .5rem rgba(51, 51, 51,.5);
+    box-shadow: .1rem .5rem rgba(255, 255, 255, 0.5);
 }
 
 .header a{
     font-size: 2rem;
     text-decoration: none;
-    color: #333;
+    color: rgba(255, 255, 255, 0.5);
 }
-
-/* .fa-bars{
-    font-size: 3rem;
-    color: #333;
-    cursor:pointer;
-    display: none;
-} */
-
 
 .logo h1{
     margin-bottom: o;
@@ -103,7 +75,7 @@ body{
     height:calc(100vh - 5.2rem);
     width: 100vh;
     background:#fff;
-    border-top: .1rem solid rgba(51, 51, 51,.3);
+    border-top: .1rem solid rgba(255, 255, 255, 0.3);
     }
 
     ul{
@@ -123,10 +95,20 @@ body{
 
 /* TOP BACKGROUND IMAGE */
 .home{
-    background: url(../img/bg.png) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e6ab3f, #23a6d5, #23d5ab);
+    background-size:400%, 400%;
+    position: relative;
+    animation: change 10s infinite;
 }
+
+@keyframes change {
+    0%{background-position: 0 50%;}
+    50%{background-position:50% 100%}
+    100%{background-position:0 50%;}
+}
+
 .home h2{
     font-size:3rem;
     color:grey;
@@ -137,11 +119,12 @@ body{
     margin: 2rem 0;
     text-shadow:.1rem .1rem .1rem rgba(255,255,255,.9);
 }
-
 .home h1 span{
     color: #333;
     margin: 0;
 }
+
+
 /* CHANGE BUTTON TO NEON */
 .home button{
     height: 4rem;
