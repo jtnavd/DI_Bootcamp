@@ -1,3 +1,2 @@
 let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-
-console.log([moreFruits]);
+typeof moreFruits[1][1];
