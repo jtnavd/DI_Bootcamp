@@ -1,5 +1,6 @@
 let whatHappens;
-let direction;
+
+let direction = prompt(" chose forward, back, left, right")
 
 switch (direction) {
     case "forward":
@@ -15,9 +16,10 @@ switch (direction) {
         whatHappens = "you run into a troll";
         break;
     default:
-        whatHappens = "please enter a valid direction";
+        console.log("please enter a valid direction");
 }
 
+console.log(whatHappens);
 
 
 // What is the value of the whatHappens variable, when the value of the direction variable is “forward”

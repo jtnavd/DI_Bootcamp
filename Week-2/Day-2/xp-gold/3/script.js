@@ -1,21 +1,14 @@
-let language = prompt("What language are you speaking")
-Conv1=language.toLowerCase
+let verb= prompt("Enter a verb please!");
+let str1= "ing";
+let str2= "ly";
 
-
-switch(Conv1){
-    case "french":
-        answer = "Bonjour";
-        break;
-    case "english":
-        answer = "Hello";
-        break;
-    case "hebrew":
-        answer = "Shalom";
-        break;
+if(verb.length > 3){
+    if(str1.indexOf(verb)){
+        verb+=str2;
+        console.log(verb);
+    }
+    else{
+        verb+=str1;
+        console.log(verb);
+    }
 }
-
-if(language == Conv1){
-    console.log(answer);
-}
-
-else{console.log("01110011 01101111 01110010 01110010 01111001");}
