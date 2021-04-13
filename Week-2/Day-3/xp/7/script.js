@@ -1,11 +1,12 @@
+// EXERCISE 7
+
 let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
 
-societyName =function(letter){
-for (let i = 0; i < letter.length; i+=1) {
-    console.log(letter[i].charAt(0));
-}
-}
 
+    for (let i in names) {
+        let firstLetter = names[i][0];
+        console.log(firstLetter);
+}
 
 
 // A group of friends have decided to start a secret society. The society’s name will be the first letter of each of their names sorted in alphabetical order.
