@@ -20,9 +20,3 @@ switch (direction) {
 }
 
 console.log(whatHappens);
-
-
-// What is the value of the whatHappens variable, when the value of the direction variable is “forward”
-// What is the value of the whatHappens variable, when the value of the direction variable is “back”
-// What is the value of the whatHappens variable, when the value of the direction variable is “right”
-// What is the value of the whatHappens variable, when the value of the direction variable is “left”
