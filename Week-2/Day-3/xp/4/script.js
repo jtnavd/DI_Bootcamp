@@ -1,11 +1,16 @@
-let num;
+// EXERCISE 4
 
-while (num < 10) {
-    num= +prompt("Choose a number smaller than 10");
-    console.log("Thank you!!!");  
+let guestList = {
+  randy: "Germany",
+  karla: "France",
+  wendy: "Japan",
+  norman: "England",
+  sam: "Argentina"
+}
+
+guestChoice= prompt("Write student name");
+
+  if(guestList[guestChoice]){
+    console.log("Hi! I'm ",guestChoice, ", and I'm from ", guestList[guestChoice]);
   }
-
-
-
-//   Promt the user for a number, while the number is smaller than 10 continue asking the user for a new number.
-// Tip : Which while loop is more relevant for this situation?
+  else{console.log("Hi, I'm a guest.")}

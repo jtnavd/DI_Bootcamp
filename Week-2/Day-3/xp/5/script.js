@@ -1,11 +1,16 @@
-family{
-    father:
-    mother:
-    brother:
-    sister:
+// EXERCISE 5
+
+
+family={
+    father:54,
+    mother:57,
+    brother:22,
+    sister:16,
 }
 
-
+for (i of family) {
+    console.log("family na me",family, "age: ", family[i]);
+}
 
 
 
