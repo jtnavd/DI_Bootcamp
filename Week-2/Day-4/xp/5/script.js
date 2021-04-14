@@ -13,6 +13,10 @@ let prices = {
     "orange": 1.5,
     "blueberry":10
 } 
+
+shopList = ["banana","orange","apple"]
+
+function myBill()
 // Add the stock and prices objects to your js file.
 // Create an array called shoppingList with the following items: “banana”, “orange”, and “apple”. It means that you have 1 banana, 1 orange and 1 apple in your cart.
 // Create a function called myBill() that takes no arguments.
