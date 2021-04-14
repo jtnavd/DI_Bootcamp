@@ -1,13 +1,21 @@
-// Given a item price and an array representing the amount of change in your pocket, determine whether or not you can afford the item.
-// Change will always be represented in the following order: quarters, dimes, nickels, pennies.
 // Quarters  = 0.25
 // Dimes = 0.10
 // Nickels = 0.05
 // Pennies = 0.01
-// To illustrate:
-changeEnough([25, 20, 5, 0], 4.25) should return true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50 which is bigger than 4.25 (the total amount due)
 
-// Examples
+let values = [0.25,0.10,0.05,0.01]    
+function changeEnough(change, itemCost){
+    let sum = 0;
+    for (let i = 0; i < change.length; i++) {
+        let amount = change[i] * values[i];
+        sum += amount;
+    }
+    if (sum>itemCost){console.log(true,"You have enough money in your wallet")}
+    else{console.log(false,"Sorry, You don't have enough money in your wallet")}
+}
 
-// changeEnough([2, 100, 0, 0], 14.11) ➞ false
-// changeEnough([0, 0, 20, 5], 0.75) ➞ true
+changeEnough([2, 100, 0, 0], 14.11);
+changeEnough([0, 0, 20, 5], 0.75);
+changeEnough([2, 6, 0, 0], 50.00);
+changeEnough([2, 50, 0, 0], 100.00);
+
