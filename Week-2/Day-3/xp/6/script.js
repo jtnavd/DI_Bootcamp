@@ -6,5 +6,5 @@ let details = {
     the: 'raindeer'
   }
   for (let property in details) {
-    console.log(property," ", details[property]);      
+    console.log(property, details[property]); 
   }

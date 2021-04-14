@@ -5,14 +5,20 @@ let people = ["Greg", "Mary", "Devon", "James"];
 list1=people.shift(0) && people.pop() && people.push("Jason", "Jonathan");
 
 
-console.log(list1)
+console.log(people);
 
-while(list1[i] = "Jason"){
-    // if (people != "Jason"){
+// while(list1[i] = "Jason"){
+//     // if (people != "Jason"){
+//         break;
+//     }
+
+for (people in list1) {
+    if (people === "Jason") {
         break;
     }
+}
 
-console.log(list1[i]);
+console.log(people);
 
 
 
