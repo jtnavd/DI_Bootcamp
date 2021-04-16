@@ -41,8 +41,8 @@ body{
 
 .navbar ul{
     display: flex;
-    align-items: center;
-    justify-content:space-around;
+    /* align-items: center;
+    justify-content:space-around; */
     list-style-type: none;
     padding:0;margin:0;
 }

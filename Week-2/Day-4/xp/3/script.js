@@ -1,7 +1,7 @@
 // // Write a js function that console.logs all multiples of 23 less than 500, at the end return the sum of all the multiples.
 let a= 23;
 for (let i = 0; i < 500; i++) {
-    a*2;
+    
     console.log(a);
 }
 
