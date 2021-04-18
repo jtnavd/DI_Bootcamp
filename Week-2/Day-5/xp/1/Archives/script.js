@@ -23,7 +23,7 @@ function  playTheGame(){
 }
 
 
-playTheGame();
+playTheGame
 
 
 
