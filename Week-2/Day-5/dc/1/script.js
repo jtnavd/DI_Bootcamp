@@ -10,10 +10,3 @@ do {
     subNum++;
 console.log(newNum + " bottles of beer Left on the wall.");}
 while (num > subNum);
-
-// function checkBottle(num) {
-//     if (num <=0){
-//         console.log("There's no bottle left on the wall.");
-
-//     }
-// }
