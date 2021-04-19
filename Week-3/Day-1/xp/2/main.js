@@ -1,14 +1,10 @@
+
 let findList = document.querySelector('#container');
-let list = document.getElementsByTagName('li');
+let list = document.getElementsByTagName('ul');
 
-list[1].innerHTML = "Richard"
-
-let list1= document.getElementsByClassName("list")[0].children;
-for (let ul = 0; ul < list.length; ul++) {
-    ;
-    
-}
-}
+let pickName =document.getElementsByClassName('list')[0].lastChild.innerHtml;
+pickName = document.appendChild("Richard")
+console.log(pickName);
 
 
 
