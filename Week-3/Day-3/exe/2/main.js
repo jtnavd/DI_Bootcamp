@@ -1,0 +1,1 @@
+let getName = document.forms[0][1].
