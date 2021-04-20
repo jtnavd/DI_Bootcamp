@@ -2,6 +2,7 @@ let libButton = document.getElementById('lib-button');
 
 
 function madLibs(){
+var storyDiv = document.getElementById('story');
 var noun = document.getElementById('noun').value;
 var adjective = document.getElementById('Adjective').value;
 var someName = document.getElementById('person').value;
@@ -9,15 +10,24 @@ var Verb = document.getElementById('verb').value;
 var Aplace = document.getElementById('place').value;
 
 
-for (let i of document.getElementsByTagName('input')){
-    if(i.value.lenght === 0){
-        i.style.color ='red';
-        abort = true;
-        // console.log("is empty")
-    }
-}
-let storyDiv = document.getElementById('story');
+// for (let i of document.getElementsByTagName('input')){
+//     if(i.value.lenght === 0){
+//         i.style.color ='red';
+//         abort = true;
+//         // console.log("is empty")
+//     }
+//     else{
+//         i.style.color ='none';
+//     }
+// };
+// if (abort){return;};
+
+
 storyDiv.innerHTML = "I took my "+ noun + " and "+adjective+" it "+Verb+" to "+someName+ " in "+Aplace;
+
+// let unit = document.createElement('p')
+// unit.innerText=storyDiv;
+// document.getElementById('story').appendChild(unit);
 };
 libButton.addEventListener('click', madLibs);
 
