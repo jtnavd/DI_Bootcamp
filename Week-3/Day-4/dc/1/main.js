@@ -1,3 +1,8 @@
+let values = {
+    fname: '',
+    lname: ''
+}
+
 let input = document.getElementsByTagName("input");
 
 for (input in inputs){
@@ -13,5 +18,5 @@ let form = document.getElementsByTagName('form')[0];
 
 form.addEventListener('submit',function(e){
         e.preventDefault();
-        alert(`Welcome $[value.fname]$[value.lname]`);
+        alert(`Welcome ${values.fname} ${values.lname}`)
 })
