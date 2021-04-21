@@ -10,24 +10,24 @@ var Verb = document.getElementById('verb').value;
 var Aplace = document.getElementById('place').value;
 
 
-// for (let i of document.getElementsByTagName('input')){
-//     if(i.value.lenght === 0){
-//         i.style.color ='red';
-//         abort = true;
-//         // console.log("is empty")
-//     }
-//     else{
-//         i.style.color ='none';
-//     }
-// };
-// if (abort){return;};
+for (let i of document.getElementsByTagName('input')){
+    if(i.value.lenght === 0){
+        i.style.color ='red';
+        abort = true;
+        // console.log("is empty")
+    }
+    else{
+        i.style.color ='none';
+    }
+};
+if (abort){return;};
 
 
 storyDiv.innerHTML = "I took my "+ noun + " and "+adjective+" it "+Verb+" to "+someName+ " in "+Aplace;
 
-// let unit = document.createElement('p')
-// unit.innerText=storyDiv;
-// document.getElementById('story').appendChild(unit);
+let unit = document.createElement('p')
+unit.innerText=storyDiv;
+document.getElementById('story').appendChild(unit);
 };
 libButton.addEventListener('click', madLibs);
 
