@@ -14,6 +14,6 @@ function myMove(){
     }
     pos += dir;
     el.style.left = pos + 'px';
-    console.log(frame);
+    // console.log(frame);
 }
 }

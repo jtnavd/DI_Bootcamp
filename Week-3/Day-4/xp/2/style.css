@@ -1,0 +1,32 @@
+.container {
+    border: 5px solid lightblue;
+    color: black;
+    width: 800px;height: 600px;
+    display: flex;
+    font-family: 'sans-serif';
+    font-weight: bold;
+}
+
+.origin{
+    /* width: 200px;height:200px; */
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding:10px;
+}
+
+.dragItem{
+    background-color: lightgreen;
+    font-weight: bold;
+    width: 100px;height: 100px;
+    margin: bottom 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.dropzone{
+    background-color: peru;
+    width: 300px;height:300px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+}
