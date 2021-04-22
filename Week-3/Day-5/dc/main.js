@@ -1,0 +1,5 @@
+let listTasks = [];
+
+function addTask(){
+    
+}

@@ -4,12 +4,24 @@
     box-sizing:border-box;
 }
 
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    float:right
+} 
+
+.button{
+width: 20%;
+  float:left;
+}
 body {
     background: peru;
     overflow: hidden;
 }
 
 .section {
+    border: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,4 +38,4 @@ body {
     left: 50%;
     transform:translate(-50%) ;
     font-size: 4em;
-}
+} */
