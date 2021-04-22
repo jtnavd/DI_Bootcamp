@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background: peru;
+    overflow: hidden;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid grey;
+}
+
+.section h1 {
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform:translate(-50%) ;
+    font-size: 4em;
+}
