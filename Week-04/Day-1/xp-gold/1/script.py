@@ -1,0 +1,1 @@
+print("Hello World","Hello World","Hello World","Hello World","I love python","I love python","I love python","I love python", sep="\n")
