@@ -19,6 +19,5 @@ def triangle_name(user_word):
                 random.shuffle(rand_word)
                 shuffled = ''.join(rand_word)
                 print(shuffled)
-                
     else:
         print("not enough letters")
