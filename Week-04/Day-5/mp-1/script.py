@@ -1,6 +1,7 @@
 ##### TIC TAC TOE #####
 # values record cells stat (X/O)
-def gui_game(values):
+def grid_display(values):
+    grid = [
     print("\n")
     print("\t*************")
     print("\t* {}  | {}  | {}  *".format(values[0],values[1],values[2]))
@@ -9,6 +10,7 @@ def gui_game(values):
     print("\t*---|---|---*")
     print("\t* {}  | {}  | {}  *".format(values[6],values[7],values[8]))
     print("\t*************")
+    ]
 
 # single player------------------------
 def single_player(current_player):
@@ -17,6 +19,10 @@ def single_player(current_player):
 
     # store X/O
     player_pos = {'X':[],{'O':[]}
+
+
+grid_display(values)
+
 
     # game loop
     while True:
@@ -52,7 +58,7 @@ def single_player(current_player):
 
         def player_win(player_pos, current_player):
         
-            line = [[1,2,4],[4,5,6],[7,8,9],[1,4,7],[2,5,8]]
+            line = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8]]
 
             for x in line:
                 if all(y in player_pos[current_player] for y in x):
