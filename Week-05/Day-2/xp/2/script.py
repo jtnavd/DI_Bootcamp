@@ -16,17 +16,19 @@ class Dog():
         is_stronger = dog_speed * self.weight
         print(is_stronger)
         return is_stronger
+        if self.is_stronger(True):
+            print(f"{self.name} won the fight!")
 
 
-# new_dog1 = Dog("Scoo", 4, 13)
-# new_dog2 = Dog("Bee", 6, 9)
-# new_dog3 = Dog("Doo", 7, 16)
-# other_dog = Dog("Bulldog", 5, 11)
+new_dog1 = Dog("Scoo", 4, 13)
+new_dog2 = Dog("Bee", 6, 9)
+new_dog3 = Dog("Doo", 7, 16)
+other_dog = Dog("Bulldog", 5, 11)
 
-# new_dog2.run_speed()
-# new_dog3.run_speed()
+new_dog2.run_speed()
+other_dog.run_speed()
 
-# print(new_dog1.fight(new_dog1.run_speed()))
+print(new_dog1.fight(new_dog1.run_speed()))
 
 # Implement the following methods in the Dog class: 
 # bark: returns a string which states: “<dog_name> is barking”.        

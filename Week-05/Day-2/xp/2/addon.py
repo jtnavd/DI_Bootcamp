@@ -1,14 +1,13 @@
-from script import class Dog
-print(Dog)
-# class PetDog(Dog):
-#     def __init__(self, trained):
-#         self.trained = False
+import script.Dog
+
+class PetDog(Dog):
+    def __init__(self, trained):
+        self.trained = False
     
-#     # train function
-#     def train(self):
-#         self.trained = True
-#         self.bark()
-#         print('hello')
+    # train function
+    def train(self):
+        self.trained = True
+        self.bark()
 
 # # train: prints the output of bark and switches the trained boolean to True
 
