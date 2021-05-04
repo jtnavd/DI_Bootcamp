@@ -16,6 +16,10 @@ brand.update({'number_stores':'2'})
 
 print(brand)
 
+brand["number_stores"] = 2
+
+print("\nZara clients : {}, also visit {}".format(', '.join(brand["type_of_clothes"]), ', '.join(brand["international_competitors"])))
+
 # 3. Change the number of stores to 2.
 # 4. Print a sentence that explains who Zaras clients are.
 # 5. Add a key called country_creation with a value of Spain.
