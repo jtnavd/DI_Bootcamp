@@ -19,5 +19,5 @@ cat3 = Cat("Jerry",7)
 cat1.cat_info()
 cat2.cat_info()
 cat3.cat_info()
-# r1.introduceSelf()
-# r2.introduceSelf()
+
+print(Cat)
