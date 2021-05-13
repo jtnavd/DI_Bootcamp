@@ -51,15 +51,12 @@ body
 .face_up{
     top : calc(-260px * var(--pixel-size));
 }
-
 .face_down{
     top : calc(0px * var(--pixel-size));
 }
-
 .face_left{
     top : calc(-130px * var(--pixel-size));
 }
-
 .face_right{
     top : calc(-390px * var(--pixel-size));
 }
