@@ -1,0 +1,72 @@
+/*~~ Character scale ~~*/
+:root {
+    --pixel-size:2;
+}
+
+body
+{
+    background: #855E42;
+}
+/* 
+.character{
+    width: calc(120px * var(--pixel-size));
+    height: calc(120px * var(--pixel-size));
+    
+} */
+
+/*~~ Character real-time layer ~~*/
+.character_container{
+    /* width:120px; height:120px; */
+    width: calc(120px * var(--pixel-size));
+    height: calc(120px * var(--pixel-size));
+    /* background: red; */
+    overflow: hidden;
+    position: relative;
+    margin: 18em auto;
+}
+
+/*~~ Character sprite sheet ~~*/
+.character_spritesheet{
+    animation: moveSpritesheet 1s steps(10) infinite;
+    width: calc(1200px * var(--pixel-size));
+    position: absolute;
+}
+
+/* Avoid Anti Aliasing */
+.pixelart{
+    image-rendering: pixelated;
+}
+
+/*~~ Animation ~~*/
+@keyframes moveSpritesheet {
+    from {
+        transform:translate3d(0px,0,0)
+    }
+    to {
+        transform:translate3d(-100%,0,0)
+    }
+}
+
+/* Character Direction */
+.face_up{
+    top : calc(-260px * var(--pixel-size));
+}
+.face_down{
+    top : calc(0px * var(--pixel-size));
+}
+.face_left{
+    top : calc(-130px * var(--pixel-size));
+}
+.face_right{
+    top : calc(-390px * var(--pixel-size));
+}
+
+.btn{
+    display: inline-block;
+    width:120px; height:120px;
+    border-radius: 20px;
+    outline: none;
+    font-size:30px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
