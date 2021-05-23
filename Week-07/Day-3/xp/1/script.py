@@ -188,27 +188,30 @@
 
 #-------------------------------------------------------------
 
-class Cat:
-    def __init__(self, fur_type):
-        # self.name = name
-        self.fur_type = fur_type
-        self.hair = []
-    def cat_fur(self):
-        if self.fur_type == 'black':
-            self.hair.append('black')
-        elif self.fur_type == 'red':
-            self.hair.append('red')
-        elif self.fur_type == 'grey':
-            self.hair.append('grey')
-        elif self.fur_type == 'white':
-            self.hair.append('white')
+# class Cat:
+#     def __init__(self, fur_type):
+#         # self.name = name
+#         self.fur_type = fur_type
+#         self.hair = []
+#     def cat_fur(self):
+#         if self.fur_type == 'black':
+#             self.hair.append('black')
+#         elif self.fur_type == 'red':
+#             self.hair.append('red')
+#         elif self.fur_type == 'grey':
+#             self.hair.append('grey')
+#         elif self.fur_type == 'white':
+#             self.hair.append('white')
 
-    def eat(self, food):
-        print(f'eat {food} cups of food per days')
-    def jump(self,height):
-        print(f"can jump {height}'s high")
-    def play(self):
-        print(f'plays with ball')
+#     def eat(self, food):
+#         print(f'eat {food} cups of food per days')
+#     def jump(self,height):
+#         print(f"can jump {height}'s high")
+#     def play(self):
+#         print(f'plays with ball')
 
-    def __repr__(self):
-        return f'type of hair: {self.fur_type}'
+#     def __repr__(self):
+#         return f'type of hair: {self.fur_type}'
+
+#-------------------------------------------------------------
+
